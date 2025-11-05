@@ -140,7 +140,8 @@ listRadioSize.forEach((radio) => {
 
 
         resultSize1.textContent = `${SizeValuePizza.valueSize}`
-          resultSize1.style.color = "green"
+          resultSize1.style.color = "green" ;
+      //    disableRadioButtonsresultSize1(resultSize1)
           updateTotal()
         
         // resultPriceTotal1.textContent = SizeValuePizza.priceSize
@@ -259,63 +260,111 @@ listRadioCrustType.forEach((radio) => {
 
 
 function CalulateOrderPizza() {
-  const resultPriceTotal = document.getElementById("resultPriceTotal");
 
-  const resultPotting = document.getElementById("resultPotting");
-  const resultCrustTypePizza = document.getElementById("resultCrustTypePizza")
-
-  const resultSize = document.getElementById("resultSize")   ;
-
-const resultWhereToEat  = document.getElementById("resultWhereToEat")  ;
+  
 
 
-//{valueSize:"small",priceValueSize:priceSize}
+   const checkedSmall = document.getElementById("small")  ;
 
-  resultPriceTotal.textContent = ` $${
-    Number(PottingValuePotting.totalPottingprice) + SizeValuePizza.priceSize  + eatValuePizza.priceEaten
-  }`;
+   checkedSmall.disabled = true;
+    const checkedMedium = document.getElementById("medium") ;
+    checkedMedium.disabled = true ;
+    const checkedLarge = document.getElementById("large") ;
+    checkedLarge.disabled = true ;
+    const pottingCheese = document.getElementById("cheese") ;
+    pottingCheese.disabled = true ;
+    const pottingOnion = document.getElementById("Onion");
+    pottingOnion.disabled = true ;
+    const pottingMushrooms = document.getElementById("Mushrooms") ;
+    pottingMushrooms.disabled = true ;
+    const pottingOlives = document.getElementById("Olives") ;
+    pottingOlives.disabled = true ;
+    const pottingTomatoes = document.getElementById("TOmatoes") ;
+    pottingTomatoes.disabled = true ;
+    const pottingGreen = document.getElementById("Green") ;
+    pottingGreen.disabled = true ;
+    const crustThin = document.getElementById("crustThin") ;
+    crustThin.disabled = true ;
+    const crustThick = document.getElementById("crustThick");
+    crustThick.disabled = true ;
+    const eatIn = document.getElementById("eatin");
+    eatIn.disabled = true ;
+    const takeOut = document.getElementById("eatout") ;
+    takeOut.disabled = true ;
+   const btnCalculePrice  = document.getElementById("btnCalculePrice") ;
+    btnCalculePrice.disabled = true ;
 
-  if (
-    PottingValuePotting.listNamesPotting &&
-    PottingValuePotting.listNamesPotting.length > 0
-  ) {
-    // Join array elements into a readable string
-    resultPotting.textContent = ` ${PottingValuePotting.listNamesPotting.join(
-      ", "
-    )}`;
-    resultPotting.style.color = "green"
-  } else {
-    resultPotting.textContent = "No toppings selected";
-  }
-
-
-     if(crustTypeValuePizza.length > 0)
-     {
-
-        resultCrustTypePizza.textContent = `${crustTypeValuePizza}`
-        resultCrustTypePizza.style.color = "green"
-     }
-
-
-     if( Object.keys(SizeValuePizza).length >0)
-     {
-        resultSize.textContent = `${SizeValuePizza.valueSize}`
-        resultSize.style.color = "green"
-
-
-     }
+    btnCalculePrice.style.backgroundColor = "gray";   // change background color
+    btnCalculePrice.style.color = "white";            // change text color
+    btnCalculePrice.style.cursor = "not-allowed"; 
 
 
-     if( Object.keys(eatValuePizza).length >0)
-        {
-           resultWhereToEat.textContent = `${eatValuePizza.valueWhereToEat}`
-           resultWhereToEat.style.color = "green"
+    //     myButton.disabled = true;
+   // resultPriceTotal1.textContent = "$0";
+    //resultPotting1.textContent = "";
+
+  
+
+
+
+
+
+//   const resultPriceTotal = document.getElementById("resultPriceTotal");
+
+//   const resultPotting = document.getElementById("resultPotting");
+//   const resultCrustTypePizza = document.getElementById("resultCrustTypePizza")
+
+//   const resultSize = document.getElementById("resultSize")   ;
+
+// const resultWhereToEat  = document.getElementById("resultWhereToEat")  ;
+
+
+// //{valueSize:"small",priceValueSize:priceSize}
+
+//   resultPriceTotal.textContent = ` $${
+//     Number(PottingValuePotting.totalPottingprice) + SizeValuePizza.priceSize  + eatValuePizza.priceEaten
+//   }`;
+
+//   if (
+//     PottingValuePotting.listNamesPotting &&
+//     PottingValuePotting.listNamesPotting.length > 0
+//   ) {
+//     // Join array elements into a readable string
+//     resultPotting.textContent = ` ${PottingValuePotting.listNamesPotting.join(
+//       ", "
+//     )}`;
+//     resultPotting.style.color = "green"
+//   } else {
+//     resultPotting.textContent = "No toppings selected";
+//   }
+
+
+//      if(crustTypeValuePizza.length > 0)
+//      {
+
+//         resultCrustTypePizza.textContent = `${crustTypeValuePizza}`
+//         resultCrustTypePizza.style.color = "green"
+//      }
+
+
+//      if( Object.keys(SizeValuePizza).length >0)
+//      {
+//         resultSize.textContent = `${SizeValuePizza.valueSize}`
+//         resultSize.style.color = "green"
+
+
+//      }
+
+
+//      if( Object.keys(eatValuePizza).length >0)
+//         {
+//            resultWhereToEat.textContent = `${eatValuePizza.valueWhereToEat}`
+//            resultWhereToEat.style.color = "green"
    
    
-        }
-  console.log(
-    " SizeValuePizza 111",
-    SizeValuePizza,
-    PottingValuePotting.listNamesPotting
-  );
+//         }
+
+
+
+
 }

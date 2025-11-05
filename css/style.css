@@ -80,8 +80,8 @@ body {
   }
 
  
-  button:hover {
+ /* button:hover {
     background-color: #357abd;       /* darker blue */
-    transform: translateY(-2px);     /* small lift */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
+ /*   transform: translateY(-2px);     /* small lift */
+   /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }*/
