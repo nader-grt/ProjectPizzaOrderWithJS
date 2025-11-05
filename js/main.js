@@ -318,5 +318,5 @@ function resetOrderPizza() {
 
   btnCalculePrice.style.backgroundColor = "#4CAF50"; // normal color (change as you like)
   btnCalculePrice.style.color = "white";              // normal text color
-  btnCalculePrice.style.cursor = "pointer";   
+ // btnCalculePrice.style.cursor = "pointer";   
 }
