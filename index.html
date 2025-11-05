@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project Pizza</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Make your Pizza</h1>
+    <div id="pizza">
+      <div>
+        <h4 for="forSize">Size</h4>
+        <fieldset>
+            <div>
+                <input type="radio" name="size" id="small" value="Small"/>
+                <label for="forSmall">Small</label>
+              </div>
+              <div>
+                <input type="radio" name="size" id="large"  value="Large" />
+                <label for="forLarge">Large</label>
+              </div>
+              <div>
+                <input type="radio" name="size" id="medium" value="Medium"  />
+                <label for="forMedium">Medium</label>
+              </div>
+
+        </fieldset>
+     
+      </div>
+
+      <div>
+        <h4 for="forPotting">Potting</h4>
+        <div class="potting">
+          <div>
+            <div>
+              <input type="checkbox" name="potting" id="cheese"  value="cheese" />
+              <label for="forSmall">Extra cheese</label>
+            </div>
+            <div>
+              <input type="checkbox" name="potting" id="Onion" value="Onion"  />
+              <label for="forOnion">Onion</label>
+            </div>
+            <div>
+              <input type="checkbox" name="potting" id="Mushrooms" value="Mushrooms"  />
+              <label for="forMedium">Mushrooms</label>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <input type="checkbox" name="potting" id="Olives" value="Olives"  />
+              <label for="forSmall">Olives</label>
+            </div>
+            <div>
+              <input type="checkbox" name="potting" id="TOmatoes"  value="TOmatoes" />
+              <label for="forLarge">TOmatoes</label>
+            </div>
+            <div>
+              <input type="checkbox" name="potting" id="Green"  value="Green" />
+              <label for="forMedium">Green Pepeer</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h4 for="forOrderSummury">Order Summury</h4>
+        <div  class="forOrderSummury">
+            <p>
+                Size  <span class="resultPizzaColor" id="resultSize">No Size yet</span>
+            </p>
+            <p>
+                Toppings <span class="resultPizzaColor"  id="resultPotting">
+                    No toppings selected
+                </span>
+            </p>
+            <p>
+                crust Type <span  class="resultPizzaColor" id="resultCrustTypePizza">No Crust Type Selected</span>
+            </p>
+
+            <p>WHere To eat</p><span  class="resultPizzaColor"  id="resultWhereToEat" >No choose place </span>
+
+            <p class="totalPrice" >Total Price <span  class="resultTotalPricePizzaColor" id="resultPriceTotal"></span> </p>
+        </div>
+      </div>
+
+
+
+      <!-- <div class=""> -->
+
+        <div>
+          <h4 for="forcrustType">Crust type</h4>
+       <fieldset>
+        <div>
+            <input type="radio" name="crustThin" id="crustThin"  value="crust Thin" />
+            <label for="forLarge">crust Thin</label>
+          </div>
+          <div>
+            <input type="radio" name="crustThin" id="crustThick" value="crust Thick" />
+            <label for="forCrustThink">Crust Thick</label>
+          </div>
+       </fieldset>
+        </div>
+
+
+        <div >
+          <h4 for="forwheretoeat">Where To eat</h4>
+     <fieldset>
+
+        <div  class="whereToEat">
+           <!-- <fieldset > -->
+            <div>
+                <input type="radio" name="eatin" id="eatin" value="Eat in" />
+                <label for="forLarge">Eat In</label>
+             </div>
+    
+             <div>
+                <input type="radio" name="eatin" id="eatout" value="Take out" />
+                <label for="forCrustThink">Take out</label>
+              </div>
+           <!-- </fieldset> -->
+        </div>
+     </fieldset>
+        </div>
+       
+       
+      <!-- </div> -->
+
+    </div>
+
+
+ 
+   <div class="operation" >
+        <button onclick="CalulateOrderPizza()" >order Pizza</button>
+        <button>Reset</button>
+   </div>
+
+
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+
+
+
+
+body {
+  
+    background: #eee;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  h1{
+    text-align: center;
+    color: red;
+  }
+
+
+   #pizza {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    gap: 15px;
+    width: 80%;
+    margin: auto;
+  } 
+
+  .whereToEat{
+
+    display:flex; 
+
+    
+  }
+
+
+  .potting {
+   
+   display: flex;
+  }
+
+  .totalPrice{
+    margin-top: 50px;
+  }
+
+  .operation{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 15px;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+   
+   
+  }
+
+
+
+
+
+
+
+  fieldset {
+   
+    
+    border: none;
+   
+  }
+
+
+  button {
+    background-color: #6dcc7a;       /* soft blue */
+    color: white;                    /* text color */
+    border: none;                    /* remove default border */
+    padding: 10px 20px;              /* space inside */
+    border-radius: 8px;              /* rounded corners */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft shadow */
+    transition: all 0.3s ease;       /* smooth hover animation */
+  }
+
+ 
+  button:hover {
+    background-color: #357abd;       /* darker blue */
+    transform: translateY(-2px);     /* small lift */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
