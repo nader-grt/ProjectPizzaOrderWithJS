@@ -310,9 +310,13 @@ function resetOrderPizza() {
   const takeOut = document.getElementById("eatout");
   takeOut.disabled = false;
   const btnCalculePrice = document.getElementById("btnCalculePrice");
+
+
+
   btnCalculePrice.disabled = false;
 
-    btnCalculePrice.style.backgroundColor = "#6dcc7a;";   // change background color
-    btnCalculePrice.style.color = "white";            // change text color
-    btnCalculePrice.style.cursor = "not-allowed";
+
+  btnCalculePrice.style.backgroundColor = "#4CAF50"; // normal color (change as you like)
+  btnCalculePrice.style.color = "white";              // normal text color
+  btnCalculePrice.style.cursor = "pointer";   
 }

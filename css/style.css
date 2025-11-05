@@ -67,21 +67,16 @@ body {
 
 
   button {
-    background-color: #6dcc7a;       /* soft blue */
-    color: white;                    /* text color */
-    border: none;                    /* remove default border */
-    padding: 10px 20px;              /* space inside */
-    border-radius: 8px;              /* rounded corners */
+    background-color: #6dcc7a;      
+    color: white;                  
+    border: none;                  
+    padding: 10px 20px;             
+    border-radius: 8px;            
     font-size: 16px;
     font-weight: 600;
-    cursor: pointer;
+  
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft shadow */
     transition: all 0.3s ease;       /* smooth hover animation */
   }
 
  
- /* button:hover {
-    background-color: #357abd;       /* darker blue */
- /*   transform: translateY(-2px);     /* small lift */
-   /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }*/
