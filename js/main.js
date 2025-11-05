@@ -312,7 +312,7 @@ function resetOrderPizza() {
   const btnCalculePrice = document.getElementById("btnCalculePrice");
   btnCalculePrice.disabled = false;
 
-  //  btnCalculePrice.style.backgroundColor = "gray";   // change background color
-  //  btnCalculePrice.style.color = "white";            // change text color
-  //  btnCalculePrice.style.cursor = "not-allowed";
+    btnCalculePrice.style.backgroundColor = "#6dcc7a;";   // change background color
+    btnCalculePrice.style.color = "white";            // change text color
+    btnCalculePrice.style.cursor = "not-allowed";
 }
